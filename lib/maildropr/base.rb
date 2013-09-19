@@ -13,8 +13,8 @@ module MailDropr
     end
 
 
-    def add_subscriber(list_id, options = {})
-      post("/lists/#{list_id}/subscribers", options)
+    def add_subscriber(list_id, email)
+      post("/lists/#{list_id}/subscribers", :email => email)
     end
 
     private 

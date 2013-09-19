@@ -32,7 +32,7 @@ describe MailDropr::Base do
   describe ".add_subscriber" do
     it "adds the given subscriber to the list" do
       subject.should_receive(:post).with("/lists/LIST_ID/subscribers", {:email => "john.smith@example.com"})
-      subject.add_subscriber("LIST_ID", :email => "john.smith@example.com")
+      subject.add_subscriber("LIST_ID", "john.smith@example.com")
     end
   end
 end
