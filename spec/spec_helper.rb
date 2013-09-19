@@ -13,6 +13,7 @@ end
 $: << File.expand_path(File.join(File.dirname(__FILE__), "..", "lib"))
 
 require "rspec"
+require "webmock"
 require "maildropr"
 
 RSpec.configure do |config|
