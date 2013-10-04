@@ -14,7 +14,7 @@ module MailDropr
 
 
     def add_subscriber(list_id, email)
-      post("/lists/#{list_id}/subscribers", :email => email)
+      post("/lists/#{list_id}/subscribers.json", :email => email)
     end
 
     private 
